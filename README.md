@@ -22,7 +22,7 @@ And here is the Wally's key in that scenario:
 
 All the data I used to train this ML model is based on [Where-is-Waldo-Wally](https://www.deviantart.com/where-is-waldo-wally/gallery/) DevianArt Gallery. They had scanned all the scenes from books #2 to #5 and added convenient marks pointing to the answers. All the originals images can be found in [data/1-original-images](https://github.com/ubalklen/where-is-the-key/tree/master/data/1-original-images) folder.
 
-From those images, I cutted out the answers panel ([data/2-no-panels](https://github.com/ubalklen/where-is-the-key/tree/master/data/2-no-panels) folder). I then chopped the resulting images into 40x40 sided slices ([data/3-slices](https://github.com/ubalklen/where-is-the-key/tree/master/data/3-slices) folder and subfolders).
+From those images, I cutted out the answers panel ([data/2-no-panels](https://github.com/ubalklen/where-is-the-key/tree/master/data/2-no-panels) folder). I then chopped the resulting images into 40x40 sized slices ([data/3-slices](https://github.com/ubalklen/where-is-the-key/tree/master/data/3-slices) folder and subfolders).
 
 The images filenames are in *00-00-k.jpg* format, where the numbers are the coordinates of the slice and the *-k* means there is a key in the image.
 
@@ -34,7 +34,7 @@ Unfortunately, my model didn't take much advantage of all those images because I
 
 The model have been constructed with evilsocket's [Ergo](https://github.com/evilsocket/ergo) framework, which makes easier to build models on [Keras](https://keras.io/).
 
-I tried to use the same model evilsocket had used to demonstrate Ergo (https://www.evilsocket.net/2018/11/22/Presenting-project-Ergo-how-to-build-an-airplane-detector-for-satellite-imagery-with-Deep-Learning/), a vanilla Convolutional Neural Network (CNN) for airplane detection in satellite imagery. Unfortunately, results have not been very good.
+I tried to use the same model evilsocket had used to [demonstrate Ergo](https://www.evilsocket.net/2018/11/22/Presenting-project-Ergo-how-to-build-an-airplane-detector-for-satellite-imagery-with-Deep-Learning/), a vanilla Convolutional Neural Network (CNN) for airplane detection in satellite imagery. Unfortunately, results have not been very good.
 
 I ended up making the network deeper and things improved. Here is the final model:
 
