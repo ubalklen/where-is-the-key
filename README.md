@@ -32,9 +32,9 @@ Unfortunately, my model didn't take much advantage of all those images because I
 
 ## The model
 
-The model have been constructed with evilsocket's [Ergo](https://github.com/evilsocket/ergo) framework, which makes easier to build models on [Keras](https://keras.io/).
+The model was constructed with evilsocket's [Ergo](https://github.com/evilsocket/ergo) framework, which makes easier to build models on [Keras](https://keras.io/).
 
-I tried to use the same model evilsocket had used to [demonstrate Ergo](https://www.evilsocket.net/2018/11/22/Presenting-project-Ergo-how-to-build-an-airplane-detector-for-satellite-imagery-with-Deep-Learning/), a vanilla Convolutional Neural Network (CNN) for airplane detection in satellite imagery. Unfortunately, results have not been very good.
+I tried to use the same model evilsocket had used to [demonstrate Ergo](https://www.evilsocket.net/2018/11/22/Presenting-project-Ergo-how-to-build-an-airplane-detector-for-satellite-imagery-with-Deep-Learning/), a vanilla Convolutional Neural Network (CNN) for airplane detection in satellite imagery, but unfortunately results were not very good.
 
 I ended up making the network deeper and things improved. Here is the final model:
 
