@@ -96,5 +96,5 @@ confusion matrix:
 
 ## Final notes
 
-Thanks to all the dev whose work allowed me to create this project.
+Thanks to all the dev whose work allowed me to create this project.\
 Thank you, Gaby (*personal cheerleader*).
